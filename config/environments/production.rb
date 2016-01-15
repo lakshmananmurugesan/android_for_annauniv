@@ -84,12 +84,13 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {:host => 'android-for-annauniv.herokuapp.com'}
   config.action_mailer.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
-      :address              => "smtp.sendgrid.net",
-      :port                 => 587,
-      :user_name            => "lakshman90",
-      :password             => 'SMACKTHAT2',
-      :authentication       => "plain",
-      :enable_starttls_auto => true,
-      :openssl_verify_mode => 'none'
+      :address        => 'smtp.sendgrid.net',
+      :address        => 'smtp.sendgrid.net',
+      :port           => '587',
+      :authentication => :plain,
+      :user_name      => "lakshman90",
+      :password       => "SMACKTHAT2",
+      :domain         => 'heroku.com',
+      :enable_starttls_auto => true
   }
 end
