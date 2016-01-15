@@ -26,6 +26,7 @@
         <li class="active"><a href="/articles">Articles</a></li>
         <% if isAdmin? %>
         <li><%= link_to "UsersList",articles_users_list_path %></li>
+        <li><a href="/quiz/score_board">ScoreBoard</a></li>
         <%end%>
         <% if user_signed_in? %>
         <li><a target="_blank" href="https://android-quiz.herokuapp.com/quiz/index?user=<%= current_user.email %>&name=<%= current_user.name%>">QUIZ</a></li>

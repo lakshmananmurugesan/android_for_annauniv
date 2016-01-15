@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
 
   def isAdmin?
     if current_user != nil
-      if current_user.email.strip == "sivaprasathmjn@gmail.com"
+      if current_user.email.strip == "lakshmanmurugesan@gmail.com"
         return true
       end
     end
