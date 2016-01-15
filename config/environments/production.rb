@@ -27,7 +27,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -84,13 +84,12 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {:host => 'android-for-annauniv.herokuapp.com'}
   config.action_mailer.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
-      :address        => 'smtp.sendgrid.net',
-      :port           => '587',
-      :authentication => :plain,
-      :user_name      => "lakshman90",
-      :password       => "SMACKTHAT2",
-      :domain         => 'heroku.com',
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :user_name            => "lakshmanmurugesan@gmail.com",
+      :password             => 'SMACKTHAT',
+      :authentication       => "plain",
       :enable_starttls_auto => true,
-      :ssl => true
+      :openssl_verify_mode => 'none'
   }
 end
