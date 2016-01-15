@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
 
 
   def users_list
-    @userlist = User.all
+
   end
 
   def authenticateUsers

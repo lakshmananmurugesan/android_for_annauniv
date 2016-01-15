@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` on Rails 4+ applications as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '4a3df372529732922c6e1b083b92adee01f77a4f6642afd042b45a3d11dfbf6f29d6b089f4440b29d1503bb2d81e716fcb0391fb38d4d73dff0cd1461e1039e3'
+  # config.secret_key = '37e142dba77328e196397a2384cf03ed4c5a26d9526c9978176ad5b8516a2d343b3fd017129784ef754f8e0ffb88c6358dfe07e11557363a65c6fa458376ca27'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -99,7 +99,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = 'f3ca8fc821d945c1a70483e6035e337e414fa3cffd724adc22242ea3af5c8e57845fb6fd61a39e7c81d71d6ff54558a2f3d8a6a17579c5b082709d4dde03487d'
+  # config.pepper = '231fc6558fa42bd2cd664d0ce7d5c5f993872f0503dc7bc663a0a9eabcdb5a4737e5e76f24d6a46fc1ca1ceb6a6b326f876bdd283fe5e843022abcd6e3e7d4f4'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -118,7 +118,7 @@ Devise.setup do |config|
   # their account can't be confirmed with the token any more.
   # Default is nil, meaning there is no restriction on how long a user can take
   # before confirming their account.
-  config.confirm_within = 3.days
+   config.confirm_within = 3.days
 
   # If true, requires any email changes to be confirmed (exactly the same way as
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
@@ -171,7 +171,7 @@ Devise.setup do |config|
   # :time  = Re-enables login after a certain amount of time (see :unlock_in below)
   # :both  = Enables both strategies
   # :none  = No unlock strategy. You should handle unlocking by yourself.
-  config.unlock_strategy = :both
+   config.unlock_strategy = :both
 
   # Number of authentication tries before locking an account if lock_strategy
   # is failed attempts.

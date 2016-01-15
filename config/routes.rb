@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users
   post 'articles/authenticateUsers'
   get 'articles/users_list'
