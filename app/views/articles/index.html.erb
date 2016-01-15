@@ -1,5 +1,17 @@
-<h1>Listing Android Exercises</h1>
+<% if !user_signed_in? %>
+<br><br><br>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Welcome!</h1>
+    <p>Register to get started.</p>
+    <p>
+      <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+    </p>
+  </div>
+</div>
+<%end%>
 
+<h2>Listing Android Exercises</h2>
 <div id="articles">
 <table>
   <thead>
