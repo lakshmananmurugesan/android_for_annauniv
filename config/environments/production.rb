@@ -89,7 +89,8 @@ Rails.application.configure do
       :authentication => :plain,
       :user_name      => "lakshman90",
       :password       => "SMACKTHAT2",
-      :domain         => 'herokuapp.com',
-      :enable_starttls_auto => true
+      :domain         => 'heroku.com',
+      :enable_starttls_auto => true,
+      :ssl => true
   }
 end
